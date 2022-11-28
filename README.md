@@ -1,8 +1,8 @@
 # LogService
 Simple Log Service for Winforms Application
 
-In use
-
+<h2>In use</h2>
+<br>
 <h3>Get content</h3><br>
    LogService logService = new LogService();<br>
    logService.ControlFile("SaleLogs.txt", "Satış Kayıtları");<br>
@@ -16,6 +16,7 @@ In use
     LogService logService = new LogService();<br>
     logService.ApplicationLogger($"{userName} adlı kullanıcı sisteme giriş yaptı");<br>
 
-Getting log file's content
+<br>
+<h3>Getting log file's content</h3>
 
 ![1](https://user-images.githubusercontent.com/55652632/204342619-5d838b78-d371-4679-acc7-a000f91493f2.PNG)
