@@ -126,7 +126,7 @@ namespace Project.Services
                 }
                 string messageToWrite = "--" + GetDate() + "  #######  " + Message;
                 Logger(GetAppFolder() + @"Logs\CustomerLogs.txt", messageToWrite);
-                ApplicationLogger("Müşteri Kayıtları dosyası {DateTime.Now.ToString()} tarihinde oluşturuldu");
+                ApplicationLogger($"Müşteri Kayıtları dosyası {DateTime.Now.ToString()} tarihinde oluşturuldu");
             }
         }
         public void SaleLogger(string Message)
@@ -145,7 +145,7 @@ namespace Project.Services
                 }
                 string messageToWrite = "--" + GetDate() + "  #######  " + Message;
                 Logger(GetAppFolder() + @"Logs\SaleLogs.txt", messageToWrite);
-                ApplicationLogger("Satış Kayıtları dosyası {DateTime.Now.ToString()} tarihinde oluşturuldu");
+                ApplicationLogger($"Satış Kayıtları dosyası {DateTime.Now.ToString()} tarihinde oluşturuldu");
             }
         }
     }
