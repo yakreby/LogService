@@ -3,18 +3,18 @@ Simple Log Service for Winforms Application
 
 In use
 
-Get content
-   LogService logService = new LogService();
-   logService.ControlFile("SaleLogs.txt", "Satış Kayıtları");
-   string[] list = File.ReadAllLines(logService.GetAppPath("SaleLogs.txt"));
-   foreach (string line in list)
-   {
-      SaleLogsData.Items.Add(line);
-   }
+<h3>Get content</h3><br>
+   LogService logService = new LogService();<br>
+   logService.ControlFile("SaleLogs.txt", "Satış Kayıtları");<br>
+   string[] list = File.ReadAllLines(logService.GetAppPath("SaleLogs.txt"));<br>
+   foreach (string line in list)<br>
+   {<br>
+      SaleLogsData.Items.Add(line);<br>
+   }<br>
    
-Set content
-    LogService logService = new LogService();
-    logService.ApplicationLogger($"{userName} adlı kullanıcı sisteme giriş yaptı");
+<h3>Set content</h3><br>
+    LogService logService = new LogService();<br>
+    logService.ApplicationLogger($"{userName} adlı kullanıcı sisteme giriş yaptı");<br>
 
 Getting log file's content
 
